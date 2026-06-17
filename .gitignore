@@ -1,0 +1,33 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.DS_Store
+
+.venv/
+env/
+venv/
+
+.ipynb_checkpoints/
+
+# Model weights — loaded from HuggingFace Hub, never committed to git
+# Primary:  SarcoNarco/finbert_intent_v3
+# Fallback: SarcoNarco/financial-models
+**/*.pt
+**/*.bin
+**/*.safetensors
+
+data/*.csv
+data/*.jsonl
+data/archive*
+
+*.log
+*.db
+
+financial_pragmatic_ai/data/*.csv
+financial_pragmatic_ai/data/*.jsonl
+financial_pragmatic_ai/data/archive*
+financial_pragmatic_ai/data/pragmatic_training_dataset/
+financial_pragmatic_ai/data/FinancialPhraseBank-v1.0/
+financial_pragmatic_ai/data/FinancialPhraseBank.zip
+financial_pragmatic_ai/data/__MACOSX/

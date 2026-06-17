@@ -1,0 +1,35 @@
+=== DATASET ===
+Full dataset size: 99926
+Balanced sample size: 240
+Full per-class counts: {'growth': 11973, 'neutral': 84476, 'risk': 3477}
+Balanced per-class counts: {'growth': 80, 'neutral': 80, 'risk': 80}
+
+=== FINBERT CLASSIFICATION REPORT ===
+              precision    recall  f1-score   support
+
+      growth     0.5294    0.6750    0.5934        80
+     neutral     0.4833    0.7250    0.5800        80
+        risk     0.5000    0.1125    0.1837        80
+
+    accuracy                         0.5042       240
+   macro avg     0.5042    0.5042    0.4524       240
+weighted avg     0.5042    0.5042    0.4524       240
+
+
+=== OUR SYSTEM CLASSIFICATION REPORT ===
+              precision    recall  f1-score   support
+
+      growth     1.0000    0.7625    0.8652        80
+     neutral     0.7054    0.9875    0.8229        80
+        risk     0.8806    0.7375    0.8027        80
+
+    accuracy                         0.8292       240
+   macro avg     0.8620    0.8292    0.8303       240
+weighted avg     0.8620    0.8292    0.8303       240
+
+
+=== AGREEMENT ANALYSIS ===
+Agreement rate: 0.5625
+Disagreement count: 105
+Ours correct, FinBERT wrong: 90
+FinBERT correct, Ours wrong: 12

@@ -1,0 +1,132 @@
+{
+  "dataset": {
+    "full_size": 99926,
+    "sample_size": 240,
+    "full_class_counts": {
+      "growth": 11973,
+      "neutral": 84476,
+      "risk": 3477
+    },
+    "sample_class_counts": {
+      "growth": 80,
+      "neutral": 80,
+      "risk": 80
+    },
+    "per_class_target": 80,
+    "sampling_random_state": 42
+  },
+  "finbert": {
+    "accuracy": 0.5041666666666667,
+    "macro_precision": 0.5042483660130719,
+    "macro_recall": 0.5041666666666667,
+    "macro_f1": 0.4523600209314495,
+    "weighted_f1": 0.4523600209314495,
+    "per_class": {
+      "growth": {
+        "precision": 0.5294117647058824,
+        "recall": 0.675,
+        "f1": 0.5934065934065934,
+        "support": 80
+      },
+      "neutral": {
+        "precision": 0.48333333333333334,
+        "recall": 0.725,
+        "f1": 0.58,
+        "support": 80
+      },
+      "risk": {
+        "precision": 0.5,
+        "recall": 0.1125,
+        "f1": 0.1836734693877551,
+        "support": 80
+      }
+    },
+    "confusion_matrix": [
+      [
+        54,
+        20,
+        6
+      ],
+      [
+        19,
+        58,
+        3
+      ],
+      [
+        29,
+        42,
+        9
+      ]
+    ]
+  },
+  "our_system": {
+    "accuracy": 0.8291666666666667,
+    "macro_precision": 0.8619847192608386,
+    "macro_recall": 0.8291666666666666,
+    "macro_f1": 0.8302953273507985,
+    "weighted_f1": 0.8302953273507985,
+    "per_class": {
+      "growth": {
+        "precision": 1.0,
+        "recall": 0.7625,
+        "f1": 0.8652482269503546,
+        "support": 80
+      },
+      "neutral": {
+        "precision": 0.7053571428571429,
+        "recall": 0.9875,
+        "f1": 0.8229166666666666,
+        "support": 80
+      },
+      "risk": {
+        "precision": 0.8805970149253731,
+        "recall": 0.7375,
+        "f1": 0.8027210884353742,
+        "support": 80
+      }
+    },
+    "confusion_matrix": [
+      [
+        61,
+        12,
+        7
+      ],
+      [
+        0,
+        79,
+        1
+      ],
+      [
+        0,
+        21,
+        59
+      ]
+    ]
+  },
+  "improvement": {
+    "accuracy_delta": 0.32500000000000007,
+    "macro_f1_delta": 0.37793530641934897,
+    "macro_precision_delta": 0.35773635324776676,
+    "macro_recall_delta": 0.32499999999999996
+  },
+  "comparison": {
+    "agreement_rate": 0.5625,
+    "agreement_count": 135,
+    "disagreement_count": 105,
+    "ours_correct_finbert_wrong_count": 90,
+    "finbert_correct_ours_wrong_count": 12
+  },
+  "confidence_comparison": {
+    "finbert": {
+      "growth": 84.9732,
+      "neutral": 82.5014,
+      "risk": 80.6926
+    },
+    "our_system": {
+      "growth": 78.8256,
+      "neutral": 97.5148,
+      "risk": 81.3437
+    }
+  },
+  "results_dir": "/Users/saroshnadaf/Documents/NLP_Proj/backend/financial_pragmatic_ai/evaluation/better_than_fin/results"
+}

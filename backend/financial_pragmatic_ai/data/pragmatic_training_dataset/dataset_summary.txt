@@ -1,0 +1,8 @@
+Curated pragmatic transcript dataset summary
+clean_total=1185
+raw_total=1185
+clean_has_all3=168
+raw_has_all3=241
+clean_selected=168
+raw_selected=73
+final_records=241
